@@ -12,55 +12,55 @@
 </head>
 <body>
 
-<div class="container border">
-        <div class="row justify-content-md-center"><img src="./assets/images/Hangman.png"></div>
+<div class="container border height 50%">
+        <div class="row justify-content-md-center"><img id = "hangman" src="./assets/images/Hangman.png"></div>
         
         <br>
         <br>
     
-        <div class="row justify-content-md-center border border-secondary">
-        <div class="col-sm-6 align-self-center border border-primary text-center"><img src="./assets/images/Code.jpg"></div>
-        <div class="col-sm-6 align-self-center border border-primary text-center">
+        <div class="row justify-content-md-center">
+        <div class="col-sm-6 align-self-center text-center"><img src="./assets/images/Code.jpg"></div>
+        <div class="col-sm-6 align-self-center text-center">
             <h3>Press any key to get started! <span id="user-text"></span></h3></div>
         </div>
 
-         <div class="row justify-content-center border border-secondary">
-            <div class="col-sm-3 align-self-center border border-primary"></div>
-            <div class="col-sm-3 align-self-center border border-primary text-center"></div>
-            <div class="col-sm-6 align-self-center border border-primary wins text-center"><h3>Wins: <span id="wins-counter"></span></h3></div>
+         <div class="row justify-content-center">
+            <div class="col-sm-3 align-self-center"></div>
+            <div class="col-sm-3 align-self-center text-center"></div>
+            <div class="col-sm-6 align-self-center wins text-center"><h3>Wins: <span id="wins-counter"></span></h3></div>
             </div>
 
-        <div class="row justify-content-center border border-secondary">
-            <div class="col-sm-3 align-self-center border border-primary"></div>
-            <div class="col-sm-3 align-self-center border border-primary text-center"></div>
-            <div class="col-sm-6 align-self-center border border-primary losses text-center"><h3>Losses: <span id="losses-counter"></span></h3></div>
+        <div class="row justify-content-center">
+            <div class="col-sm-3 align-self-center"></div>
+            <div class="col-sm-3 align-self-center text-center"></div>
+            <div class="col-sm-6 align-self-center losses text-center"><h3>Losses: <span id="losses-counter"></span></h3></div>
             </div>
     <br>
     <br>
-         <div class="row justify-content-center border border-secondary">
-                <div class="col-sm-3 align-self-center border border-primary"></div>
-                <div class="col-sm-3 align-self-center border border-primary"></div>
-                <div class="col-sm-6 align-self-center border border-primary text-center">
+         <div class="row justify-content-center">
+                <div class="col-sm-3 align-self-center"></div>
+                <div class="col-sm-3 align-self-center"></div>
+                <div class="col-sm-6 align-self-center text-center">
                     <h2>Your Word:</span></h2></div>
                 </div>
-        <div class="row justify-content-center border border-secondary">
-                <div class="col-sm-3 align-self-center border border-primary"></div>
-                <div class="col-sm-3 align-self-center border border-primary"></div>
-                <div class="col-sm-6 align-self-center border border-primary text-center">
+        <div class="row justify-content-center">
+                <div class="col-sm-3 align-self-center"></div>
+                <div class="col-sm-3 align-self-center"></div>
+                <div class="col-sm-6 align-self-center text-center">
                     <h2 id="word-blanks">______</h2></div>
                 </div>
          <br>
          <br>            
-         <div class="row justify-content-center border border-secondary">
-                <div class="col-sm-3 align-self-center border border-primary"></div>
-                <div class="col-sm-3 align-self-center border border-primary"></div>
-                <div class="col-sm-6 align-self-center border border-primary text-left">Number of Guesses Remaining: <span id="guesses-left"></span></div>
+         <div class="row justify-content-center">
+                <div class="col-sm-3 align-self-center"></div>
+                <div class="col-sm-3 align-self-center"></div>
+                <div class="col-sm-6 align-self-center text-left">Number of Guesses Remaining: <span id="guesses-left"></span></div>
                 </div>
 
-        <div class="row justify-content-center border border-secondary">
-                <div class="col-sm-3 align-self-center border border-primary"></div>
-                <div class="col-sm-3 align-self-center border border-primary"></div>
-                <div class="col-sm-6 align-self-center border border-primary text-left">Letters Already Guessed: <span id="wrong-letter"></span></div>
+        <div class="row justify-content-center">
+                <div class="col-sm-3 align-self-center"></div>
+                <div class="col-sm-3 align-self-center"></div>
+                <div class="col-sm-6 align-self-center text-left">Letters Already Guessed: <span id="wrong-letter"></span></div>
                 </div>
          <br>
          <br>

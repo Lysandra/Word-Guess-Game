@@ -1,0 +1,16 @@
+/* body {
+    background-image: url("../images/codebackground.jpg");
+    opacity: 95%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+/* } */
+
+.wins {
+    color: green;
+}
+
+.losses {
+    color: red;
+}

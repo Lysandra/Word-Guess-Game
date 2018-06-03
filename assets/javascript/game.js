@@ -7,7 +7,9 @@
     var underScores = [];
     var userGuesses = [];
     var randomWord;
-    var winCounter = 0;
+    var winsCounter = 0;
+    var lossesCounter = 0;
+    var guess
 
            
     function startGame() {
@@ -21,19 +23,25 @@
       }
 
       //Prints underscores to the screen.
-      document.getElementById("word-blanks").text = underScores.join(" ");
+      document.getElementById("word-blanks").textContent = underScores.join(" ");
+
+      //Prints wins to the screen.
+      document.getElementById("wins-counter").textContent = winsCounter;
+
+      //Prints losses to the screen.
+      document.getElementById("losses-counter").textContent = lossesCounter;
     
+      //Prints guesses left to the screen.
+      document.getElementById("guesses-left").textContent = guessesLeft;
+      console.log(guessesLeft)
+
       //Reset game.
       wrongLetter = [];
       guessesLeft = 10;
-
-      //Printing guesses left to the screen.
-      document.getElementById("guesses-left").text = guessesLeft;
-      console.log(guessesLeft)
     }
 
     function winLose() {
-      if(winCounter === randomWord.length) {
+      if(guess === randomWord.length) {
         alert("Winner!");
         startGame();
         }
@@ -45,22 +53,23 @@
 
     //User Guesses
     document.onkeyup = function(event) {
-      userGuesses = event.key;
+      guess = event.key.toLowerCase();
       
-      if(randomWord.indexOf(userGuesses) > -1) {
+      if(randomWord.indexOf(guess) > -1) {
         console.log('yes')
         for(var i = 0; i < randomWord.length; i++) {
-            if(randomWord[i] === userGuesses) {
-                underScores[i] = userGuesses;
+            if(randomWord[i] === guess) {
+                underScores[i] = guess;
                 console.log(underScores);
-                winCounter++;
+                winsCounter++;
                 winLose();
             }
         }
       }
       else {
-          wrongLetter.push(userGuesses);
+          wrongLetter.push(guess);
           guessesLeft--;
+          lossesCounter++;
           console.log(wrongLetter);
           winLose();
       }
